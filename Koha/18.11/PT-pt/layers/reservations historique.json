@@ -1,0 +1,2779 @@
+{
+  "reports": [],
+  "dashboards": [],
+  "layers": [
+    {
+      "params": {
+        "joins": [
+          {
+            "_id": "5ddeabc93c675b02cabc572d",
+            "joinType": "default",
+            "targetCollectionName": "borrowers",
+            "targetCollectionID": "Cavji",
+            "targetElementName": "borrowernumber",
+            "targetElementID": "awem",
+            "sourceCollectionName": "old_reserves",
+            "sourceCollectionID": "Cabmg",
+            "sourceElementName": "borrowernumber",
+            "sourceElementID": "adnj",
+            "joinID": "Jduwv"
+          },
+          {
+            "_id": "5ddeabc93c675b02cabc572c",
+            "joinType": "default",
+            "targetCollectionName": "biblio",
+            "targetCollectionID": "Cdvgw",
+            "targetElementName": "biblionumber",
+            "targetElementID": "dwol",
+            "sourceCollectionName": "old_reserves",
+            "sourceCollectionID": "Cabmg",
+            "sourceElementName": "biblionumber",
+            "sourceElementID": "afdx",
+            "joinID": "Jeiki"
+          },
+          {
+            "_id": "5ddeabc93c675b02cabc572b",
+            "joinType": "default",
+            "targetCollectionName": "branches",
+            "targetCollectionID": "Cejfu",
+            "targetElementName": "branchcode",
+            "targetElementID": "ekah",
+            "sourceCollectionName": "old_reserves",
+            "sourceCollectionID": "Cabmg",
+            "sourceElementName": "branchcode",
+            "sourceElementID": "agva",
+            "joinID": "Jfgxj"
+          },
+          {
+            "_id": "5ddeabc93c675b02cabc572a",
+            "joinID": "Jbrfa",
+            "targetElementID": "baiq",
+            "targetElementName": "categorycode",
+            "targetCollectionID": "Cazeg",
+            "targetCollectionName": "categories",
+            "sourceElementID": "cduj",
+            "sourceElementName": "categorycode",
+            "sourceCollectionID": "Cavji",
+            "sourceCollectionName": "borrowers",
+            "joinType": "default"
+          },
+          {
+            "_id": "5ddeabc93c675b02cabc5729",
+            "joinID": "Jcglv",
+            "sourceElementID": "autm",
+            "sourceElementName": "itemtype",
+            "sourceCollectionID": "Cabmg",
+            "sourceCollectionName": "old_reserves",
+            "targetElementID": "btmu",
+            "targetElementName": "itemtype",
+            "targetCollectionID": "Cbsmh",
+            "targetCollectionName": "itemtypes",
+            "joinType": "default"
+          },
+          {
+            "_id": "5ddeabc93c675b02cabc5728",
+            "joinID": "Jbulm",
+            "sourceElementID": "aomv",
+            "sourceElementName": "itemnumber",
+            "sourceCollectionID": "Cabmg",
+            "sourceCollectionName": "old_reserves",
+            "targetElementID": "acnf",
+            "targetElementName": "itemnumber",
+            "targetCollectionID": "Cabrr",
+            "targetCollectionName": "items",
+            "joinType": "default"
+          },
+          {
+            "_id": "5ddeabc93c675b02cabc5727",
+            "joinType": "default",
+            "targetCollectionName": "bsort1",
+            "targetCollectionID": "Cabjt",
+            "targetElementName": "authorised_value",
+            "targetElementID": "acnt",
+            "sourceCollectionName": "borrowers",
+            "sourceCollectionID": "Cavji",
+            "sourceElementName": "sort1",
+            "sourceElementID": "czsd",
+            "joinID": "Jaeyb"
+          },
+          {
+            "_id": "5ddeabc93c675b02cabc5726",
+            "joinType": "default",
+            "targetCollectionName": "bsort2",
+            "targetCollectionID": "Caftu",
+            "targetElementName": "authorised_value",
+            "targetElementID": "agjc",
+            "sourceCollectionName": "borrowers",
+            "sourceCollectionID": "Cavji",
+            "sourceElementName": "sort2",
+            "sourceElementID": "daib",
+            "joinID": "Jaipn"
+          },
+          {
+            "_id": "5ddeabc93c675b02cabc5725",
+            "joinID": "Jazbm",
+            "sourceElementID": "aijt",
+            "sourceElementName": "homebranch",
+            "sourceCollectionID": "Cabrr",
+            "sourceCollectionName": "items",
+            "targetElementID": "aczx",
+            "targetElementName": "branchcode",
+            "targetCollectionID": "Cabej",
+            "targetCollectionName": "branches",
+            "joinType": "default"
+          }
+        ],
+        "schema": [
+          {
+            "elements": [
+              {
+                "_id": "5ddeabc93c675b02cabc5724",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "acmr",
+                "elementLabel": "Identifiant réservation",
+                "elementType": "string",
+                "elementName": "reserve_id",
+                "defaultAggregation": "count",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5723",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "adnj",
+                "elementLabel": "Code adhérent réservant",
+                "elementType": "string",
+                "elementName": "borrowernumber",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5722",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "aerp",
+                "elementLabel": "Date réservation",
+                "elementType": "date",
+                "elementName": "reservedate",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5721",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "afdx",
+                "elementLabel": "biblionumber",
+                "elementType": "string",
+                "elementName": "biblionumber"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5720",
+                "component": 1,
+                "elementRole": "dimension",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "agva",
+                "elementLabel": "Code bibliothèque de réservation",
+                "elementType": "string",
+                "elementName": "branchcode"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc571f",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "ahmg",
+                "elementLabel": "Date de notification",
+                "elementType": "date",
+                "elementName": "notificationdate"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc571e",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "ainf",
+                "elementLabel": "Date de rappel",
+                "elementType": "date",
+                "elementName": "reminderdate"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc571d",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "ajei",
+                "elementLabel": "Date d'annulation",
+                "elementType": "date",
+                "elementName": "cancellationdate",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc571c",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "akwu",
+                "elementLabel": "Note",
+                "elementType": "string",
+                "elementName": "reservenotes",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc571b",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "aliv",
+                "elementLabel": "priority",
+                "elementType": "number",
+                "elementName": "priority"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc571a",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "amns",
+                "elementLabel": "Statut",
+                "elementType": "string",
+                "elementName": "found",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5719",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "anmz",
+                "elementLabel": "timestamp",
+                "elementType": "date",
+                "elementName": "timestamp"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5718",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "aomv",
+                "elementLabel": "itemnumber",
+                "elementType": "string",
+                "elementName": "itemnumber"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5717",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "apfq",
+                "elementLabel": "Date mise à disposition",
+                "elementType": "date",
+                "elementName": "waitingdate",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5716",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "aqnx",
+                "elementLabel": "Date d'expiration",
+                "elementType": "date",
+                "elementName": "expirationdate",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5715",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "arfj",
+                "elementLabel": "lowestPriority",
+                "elementType": "string",
+                "elementName": "lowestPriority"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5714",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "asyz",
+                "elementLabel": "suspend",
+                "elementType": "string",
+                "elementName": "suspend"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5713",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "atpf",
+                "elementLabel": "suspend_until",
+                "elementType": "string",
+                "elementName": "suspend_until"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5712",
+                "collectionName": "old_reserves",
+                "collectionID": "Cabmg",
+                "elementID": "autm",
+                "elementLabel": "itemtype",
+                "elementType": "string",
+                "elementName": "itemtype"
+              }
+            ],
+            "_id": "5ddeabc93c675b02cabc5711",
+            "component": 1,
+            "top": 9,
+            "left": 43,
+            "collectionID": "Cabmg",
+            "collectionLabel": "old_reserves",
+            "collectionName": "old_reserves"
+          },
+          {
+            "elements": [
+              {
+                "_id": "5ddeabc93c675b02cabc5710",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "awem",
+                "elementLabel": "borrowernumber",
+                "elementType": "string",
+                "elementName": "borrowernumber"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc570f",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "axqh",
+                "elementLabel": "cardnumber",
+                "elementType": "string",
+                "elementName": "cardnumber"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc570e",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "aypq",
+                "elementLabel": "Nom adhérent",
+                "elementType": "string",
+                "elementName": "surname",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc570d",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "azpz",
+                "elementLabel": "Prénom adhérent",
+                "elementType": "string",
+                "elementName": "firstname",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc570c",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "baiq",
+                "elementLabel": "title",
+                "elementType": "string",
+                "elementName": "title"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc570b",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bbbh",
+                "elementLabel": "othernames",
+                "elementType": "string",
+                "elementName": "othernames"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc570a",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bctw",
+                "elementLabel": "initials",
+                "elementType": "string",
+                "elementName": "initials"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5709",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bdro",
+                "elementLabel": "streetnumber",
+                "elementType": "string",
+                "elementName": "streetnumber"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5708",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "beph",
+                "elementLabel": "streettype",
+                "elementType": "string",
+                "elementName": "streettype"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5707",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bfyw",
+                "elementLabel": "address",
+                "elementType": "string",
+                "elementName": "address"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5706",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bgvl",
+                "elementLabel": "address2",
+                "elementType": "string",
+                "elementName": "address2"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5705",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bhfe",
+                "elementLabel": "Ville",
+                "elementType": "string",
+                "elementName": "city",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5704",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bifq",
+                "elementLabel": "state",
+                "elementType": "string",
+                "elementName": "state"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5703",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bjry",
+                "elementLabel": "code postal",
+                "elementType": "string",
+                "elementName": "zipcode",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5702",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bkjr",
+                "elementLabel": "Pays",
+                "elementType": "string",
+                "elementName": "country",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5701",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "blli",
+                "elementLabel": "email",
+                "elementType": "string",
+                "elementName": "email"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5700",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bmrh",
+                "elementLabel": "phone",
+                "elementType": "string",
+                "elementName": "phone"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56ff",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bnrg",
+                "elementLabel": "mobile",
+                "elementType": "string",
+                "elementName": "mobile"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56fe",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "boui",
+                "elementLabel": "fax",
+                "elementType": "string",
+                "elementName": "fax"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56fd",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bpct",
+                "elementLabel": "emailpro",
+                "elementType": "string",
+                "elementName": "emailpro"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56fc",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bqzr",
+                "elementLabel": "phonepro",
+                "elementType": "string",
+                "elementName": "phonepro"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56fb",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "brdq",
+                "elementLabel": "B_streetnumber",
+                "elementType": "string",
+                "elementName": "B_streetnumber"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56fa",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bsjj",
+                "elementLabel": "B_streettype",
+                "elementType": "string",
+                "elementName": "B_streettype"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56f9",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bthb",
+                "elementLabel": "B_address",
+                "elementType": "string",
+                "elementName": "B_address"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56f8",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "buxm",
+                "elementLabel": "B_address2",
+                "elementType": "string",
+                "elementName": "B_address2"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56f7",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bvyz",
+                "elementLabel": "B_city",
+                "elementType": "string",
+                "elementName": "B_city"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56f6",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bwsb",
+                "elementLabel": "B_state",
+                "elementType": "string",
+                "elementName": "B_state"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56f5",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bxai",
+                "elementLabel": "B_zipcode",
+                "elementType": "string",
+                "elementName": "B_zipcode"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56f4",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bynp",
+                "elementLabel": "B_country",
+                "elementType": "string",
+                "elementName": "B_country"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56f3",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "bzjr",
+                "elementLabel": "B_email",
+                "elementType": "string",
+                "elementName": "B_email"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56f2",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "capa",
+                "elementLabel": "B_phone",
+                "elementType": "string",
+                "elementName": "B_phone"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56f1",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "cbqc",
+                "elementLabel": "dateofbirth",
+                "elementType": "date",
+                "elementName": "dateofbirth"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56f0",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "ccyq",
+                "elementLabel": "Code bibliothèque d'inscription",
+                "elementType": "string",
+                "elementName": "branchcode",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56ef",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "cduj",
+                "elementLabel": "Catégorie",
+                "elementType": "string",
+                "elementName": "categorycode",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56ee",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "ceqo",
+                "elementLabel": "dateenrolled",
+                "elementType": "date",
+                "elementName": "dateenrolled"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56ed",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "cfhv",
+                "elementLabel": "dateexpiry",
+                "elementType": "date",
+                "elementName": "dateexpiry"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56ec",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "cgir",
+                "elementLabel": "date_renewed",
+                "elementType": "date",
+                "elementName": "date_renewed"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56eb",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "chdh",
+                "elementLabel": "gonenoaddress",
+                "elementType": "string",
+                "elementName": "gonenoaddress"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56ea",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "ciqj",
+                "elementLabel": "lost",
+                "elementType": "string",
+                "elementName": "lost"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56e9",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "cjib",
+                "elementLabel": "debarred",
+                "elementType": "date",
+                "elementName": "debarred"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56e8",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "cktb",
+                "elementLabel": "debarredcomment",
+                "elementType": "string",
+                "elementName": "debarredcomment"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56e7",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "clux",
+                "elementLabel": "contactname",
+                "elementType": "string",
+                "elementName": "contactname"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56e6",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "cmbz",
+                "elementLabel": "contactfirstname",
+                "elementType": "string",
+                "elementName": "contactfirstname"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56e5",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "cnmz",
+                "elementLabel": "contacttitle",
+                "elementType": "string",
+                "elementName": "contacttitle"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56e4",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "coxh",
+                "elementLabel": "guarantorid",
+                "elementType": "string",
+                "elementName": "guarantorid"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56e3",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "cpqu",
+                "elementLabel": "borrowernotes",
+                "elementType": "string",
+                "elementName": "borrowernotes"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56e2",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "cqzl",
+                "elementLabel": "relationship",
+                "elementType": "string",
+                "elementName": "relationship"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56e1",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "crat",
+                "elementLabel": "ethnicity",
+                "elementType": "string",
+                "elementName": "ethnicity"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56e0",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "cszb",
+                "elementLabel": "ethnotes",
+                "elementType": "string",
+                "elementName": "ethnotes"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56df",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "ctii",
+                "elementLabel": "sex",
+                "elementType": "string",
+                "elementName": "sex"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56de",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "cutn",
+                "elementLabel": "password",
+                "elementType": "string",
+                "elementName": "password"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56dd",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "cvme",
+                "elementLabel": "flags",
+                "elementType": "string",
+                "elementName": "flags"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56dc",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "cwac",
+                "elementLabel": "userid",
+                "elementType": "string",
+                "elementName": "userid"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56db",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "cxzs",
+                "elementLabel": "opacnote",
+                "elementType": "string",
+                "elementName": "opacnote"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56da",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "cyae",
+                "elementLabel": "contactnote",
+                "elementType": "string",
+                "elementName": "contactnote"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56d9",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "czsd",
+                "elementLabel": "code Statistique 1",
+                "elementType": "string",
+                "elementName": "sort1",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56d8",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "daib",
+                "elementLabel": "Code statistique 2",
+                "elementType": "string",
+                "elementName": "sort2",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56d7",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "dbeu",
+                "elementLabel": "altcontactfirstname",
+                "elementType": "string",
+                "elementName": "altcontactfirstname"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56d6",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "dcev",
+                "elementLabel": "altcontactsurname",
+                "elementType": "string",
+                "elementName": "altcontactsurname"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56d5",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "ddwj",
+                "elementLabel": "altcontactaddress1",
+                "elementType": "string",
+                "elementName": "altcontactaddress1"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56d4",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "devi",
+                "elementLabel": "altcontactaddress2",
+                "elementType": "string",
+                "elementName": "altcontactaddress2"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56d3",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "dftd",
+                "elementLabel": "altcontactaddress3",
+                "elementType": "string",
+                "elementName": "altcontactaddress3"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56d2",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "dgtz",
+                "elementLabel": "altcontactstate",
+                "elementType": "string",
+                "elementName": "altcontactstate"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56d1",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "dhoj",
+                "elementLabel": "altcontactzipcode",
+                "elementType": "string",
+                "elementName": "altcontactzipcode"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56d0",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "dihk",
+                "elementLabel": "altcontactcountry",
+                "elementType": "string",
+                "elementName": "altcontactcountry"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56cf",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "djdc",
+                "elementLabel": "altcontactphone",
+                "elementType": "string",
+                "elementName": "altcontactphone"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56ce",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "dkhe",
+                "elementLabel": "smsalertnumber",
+                "elementType": "string",
+                "elementName": "smsalertnumber"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56cd",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "dlvq",
+                "elementLabel": "sms_provider_id",
+                "elementType": "string",
+                "elementName": "sms_provider_id"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56cc",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "dmgi",
+                "elementLabel": "privacy",
+                "elementType": "string",
+                "elementName": "privacy"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56cb",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "dnwg",
+                "elementLabel": "privacy_guarantor_checkouts",
+                "elementType": "string",
+                "elementName": "privacy_guarantor_checkouts"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56ca",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "dowl",
+                "elementLabel": "checkprevcheckout",
+                "elementType": "string",
+                "elementName": "checkprevcheckout"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56c9",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "dplm",
+                "elementLabel": "updated_on",
+                "elementType": "date",
+                "elementName": "updated_on"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56c8",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "dqlg",
+                "elementLabel": "lastseen",
+                "elementType": "string",
+                "elementName": "lastseen"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56c7",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "drwp",
+                "elementLabel": "lang",
+                "elementType": "string",
+                "elementName": "lang"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56c6",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "dsto",
+                "elementLabel": "login_attempts",
+                "elementType": "string",
+                "elementName": "login_attempts"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56c5",
+                "collectionName": "borrowers",
+                "collectionID": "Cavji",
+                "elementID": "dtqx",
+                "elementLabel": "overdrive_auth_token",
+                "elementType": "string",
+                "elementName": "overdrive_auth_token"
+              }
+            ],
+            "_id": "5ddeabc93c675b02cabc56c4",
+            "component": 1,
+            "top": 0,
+            "left": 826,
+            "collectionID": "Cavji",
+            "collectionLabel": "borrowers",
+            "collectionName": "borrowers"
+          },
+          {
+            "elements": [
+              {
+                "_id": "5ddeabc93c675b02cabc56c3",
+                "collectionName": "biblio",
+                "collectionID": "Cdvgw",
+                "elementID": "dwol",
+                "elementLabel": "biblionumber",
+                "elementType": "string",
+                "elementName": "biblionumber"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56c2",
+                "collectionName": "biblio",
+                "collectionID": "Cdvgw",
+                "elementID": "dxwn",
+                "elementLabel": "author",
+                "elementType": "string",
+                "elementName": "author"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56c1",
+                "collectionName": "biblio",
+                "collectionID": "Cdvgw",
+                "elementID": "dyyo",
+                "elementLabel": "title",
+                "elementType": "string",
+                "elementName": "title"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56c0",
+                "collectionName": "biblio",
+                "collectionID": "Cdvgw",
+                "elementID": "dzpb",
+                "elementLabel": "unititle",
+                "elementType": "string",
+                "elementName": "unititle"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56bf",
+                "collectionName": "biblio",
+                "collectionID": "Cdvgw",
+                "elementID": "eazo",
+                "elementLabel": "notes",
+                "elementType": "string",
+                "elementName": "notes"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56be",
+                "collectionName": "biblio",
+                "collectionID": "Cdvgw",
+                "elementID": "ebfe",
+                "elementLabel": "serial",
+                "elementType": "string",
+                "elementName": "serial"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56bd",
+                "collectionName": "biblio",
+                "collectionID": "Cdvgw",
+                "elementID": "ecsa",
+                "elementLabel": "seriestitle",
+                "elementType": "string",
+                "elementName": "seriestitle"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56bc",
+                "collectionName": "biblio",
+                "collectionID": "Cdvgw",
+                "elementID": "eduj",
+                "elementLabel": "copyrightdate",
+                "elementType": "number",
+                "elementName": "copyrightdate"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56bb",
+                "collectionName": "biblio",
+                "collectionID": "Cdvgw",
+                "elementID": "eezj",
+                "elementLabel": "timestamp",
+                "elementType": "date",
+                "elementName": "timestamp"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56ba",
+                "collectionName": "biblio",
+                "collectionID": "Cdvgw",
+                "elementID": "efls",
+                "elementLabel": "abstract",
+                "elementType": "string",
+                "elementName": "abstract"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56b9",
+                "collectionName": "biblio",
+                "collectionID": "Cdvgw",
+                "elementID": "egrd",
+                "elementLabel": "datecreated",
+                "elementType": "date",
+                "elementName": "datecreated"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56b8",
+                "collectionName": "biblio",
+                "collectionID": "Cdvgw",
+                "elementID": "ehvq",
+                "elementLabel": "frameworkcode",
+                "elementType": "string",
+                "elementName": "frameworkcode"
+              }
+            ],
+            "_id": "5ddeabc93c675b02cabc56b7",
+            "component": 1,
+            "top": 45,
+            "left": 594,
+            "collectionID": "Cdvgw",
+            "collectionLabel": "biblio",
+            "collectionName": "biblio"
+          },
+          {
+            "elements": [
+              {
+                "_id": "5ddeabc93c675b02cabc56b6",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "ekah",
+                "elementLabel": "branchcode",
+                "elementType": "string",
+                "elementName": "branchcode"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56b5",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "elwg",
+                "elementLabel": "Libellé bibliothèque de réservation",
+                "elementType": "string",
+                "elementName": "branchname",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56b4",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "emuh",
+                "elementLabel": "branchaddress1",
+                "elementType": "string",
+                "elementName": "branchaddress1"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56b3",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "enfh",
+                "elementLabel": "branchaddress2",
+                "elementType": "string",
+                "elementName": "branchaddress2"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56b2",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "eowi",
+                "elementLabel": "branchaddress3",
+                "elementType": "string",
+                "elementName": "branchaddress3"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56b1",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "eppd",
+                "elementLabel": "branchzip",
+                "elementType": "string",
+                "elementName": "branchzip"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56b0",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "eqmz",
+                "elementLabel": "branchcity",
+                "elementType": "string",
+                "elementName": "branchcity"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56af",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "erdu",
+                "elementLabel": "branchstate",
+                "elementType": "string",
+                "elementName": "branchstate"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56ae",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "esmc",
+                "elementLabel": "branchcountry",
+                "elementType": "string",
+                "elementName": "branchcountry"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56ad",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "etrl",
+                "elementLabel": "branchphone",
+                "elementType": "string",
+                "elementName": "branchphone"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56ac",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "euea",
+                "elementLabel": "branchfax",
+                "elementType": "string",
+                "elementName": "branchfax"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56ab",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "evlr",
+                "elementLabel": "branchemail",
+                "elementType": "string",
+                "elementName": "branchemail"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56aa",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "ewgt",
+                "elementLabel": "branchreplyto",
+                "elementType": "string",
+                "elementName": "branchreplyto"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56a9",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "exbk",
+                "elementLabel": "branchreturnpath",
+                "elementType": "string",
+                "elementName": "branchreturnpath"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56a8",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "eyab",
+                "elementLabel": "branchurl",
+                "elementType": "string",
+                "elementName": "branchurl"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56a7",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "ezlr",
+                "elementLabel": "issuing",
+                "elementType": "string",
+                "elementName": "issuing"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56a6",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "fabs",
+                "elementLabel": "branchip",
+                "elementType": "string",
+                "elementName": "branchip"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56a5",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "fboo",
+                "elementLabel": "branchprinter",
+                "elementType": "string",
+                "elementName": "branchprinter"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56a4",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "fcwa",
+                "elementLabel": "branchnotes",
+                "elementType": "string",
+                "elementName": "branchnotes"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56a3",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "fdaf",
+                "elementLabel": "opac_info",
+                "elementType": "string",
+                "elementName": "opac_info"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56a2",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "fesz",
+                "elementLabel": "geolocation",
+                "elementType": "string",
+                "elementName": "geolocation"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc56a1",
+                "collectionName": "branches",
+                "collectionID": "Cejfu",
+                "elementID": "ffyf",
+                "elementLabel": "marcorgcode",
+                "elementType": "string",
+                "elementName": "marcorgcode"
+              }
+            ],
+            "_id": "5ddeabc93c675b02cabc56a0",
+            "component": 1,
+            "folded": true,
+            "top": 115,
+            "left": 365,
+            "collectionID": "Cejfu",
+            "collectionLabel": "branches",
+            "collectionName": "branches"
+          },
+          {
+            "elements": [
+              {
+                "_id": "5ddeabc93c675b02cabc569f",
+                "elementName": "categorycode",
+                "elementType": "string",
+                "elementLabel": "categorycode",
+                "elementID": "baiq",
+                "collectionID": "Cazeg",
+                "collectionName": "categories"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc569e",
+                "elementName": "description",
+                "elementType": "string",
+                "elementLabel": "Libellé catégorie adhérent",
+                "elementID": "bboa",
+                "collectionID": "Cazeg",
+                "collectionName": "categories",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc569d",
+                "elementName": "enrolmentperiod",
+                "elementType": "number",
+                "elementLabel": "enrolmentperiod",
+                "elementID": "bcdh",
+                "collectionID": "Cazeg",
+                "collectionName": "categories"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc569c",
+                "elementName": "enrolmentperioddate",
+                "elementType": "date",
+                "elementLabel": "enrolmentperioddate",
+                "elementID": "bdwy",
+                "collectionID": "Cazeg",
+                "collectionName": "categories"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc569b",
+                "elementName": "upperagelimit",
+                "elementType": "number",
+                "elementLabel": "upperagelimit",
+                "elementID": "befg",
+                "collectionID": "Cazeg",
+                "collectionName": "categories"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc569a",
+                "elementName": "dateofbirthrequired",
+                "elementType": "string",
+                "elementLabel": "dateofbirthrequired",
+                "elementID": "bfsf",
+                "collectionID": "Cazeg",
+                "collectionName": "categories"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5699",
+                "elementName": "finetype",
+                "elementType": "string",
+                "elementLabel": "finetype",
+                "elementID": "bgtb",
+                "collectionID": "Cazeg",
+                "collectionName": "categories"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5698",
+                "elementName": "bulk",
+                "elementType": "string",
+                "elementLabel": "bulk",
+                "elementID": "bhwl",
+                "collectionID": "Cazeg",
+                "collectionName": "categories"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5697",
+                "elementName": "enrolmentfee",
+                "elementType": "number",
+                "elementLabel": "enrolmentfee",
+                "elementID": "biic",
+                "collectionID": "Cazeg",
+                "collectionName": "categories"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5696",
+                "elementName": "overduenoticerequired",
+                "elementType": "string",
+                "elementLabel": "overduenoticerequired",
+                "elementID": "bjht",
+                "collectionID": "Cazeg",
+                "collectionName": "categories"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5695",
+                "elementName": "issuelimit",
+                "elementType": "number",
+                "elementLabel": "issuelimit",
+                "elementID": "bklu",
+                "collectionID": "Cazeg",
+                "collectionName": "categories"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5694",
+                "elementName": "reservefee",
+                "elementType": "number",
+                "elementLabel": "reservefee",
+                "elementID": "blwy",
+                "collectionID": "Cazeg",
+                "collectionName": "categories"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5693",
+                "elementName": "hidelostitems",
+                "elementType": "string",
+                "elementLabel": "hidelostitems",
+                "elementID": "bmck",
+                "collectionID": "Cazeg",
+                "collectionName": "categories"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5692",
+                "elementName": "category_type",
+                "elementType": "string",
+                "elementLabel": "category_type",
+                "elementID": "bnhy",
+                "collectionID": "Cazeg",
+                "collectionName": "categories"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5691",
+                "elementName": "default_privacy",
+                "elementType": "string",
+                "elementLabel": "default_privacy",
+                "elementID": "bopk",
+                "collectionID": "Cazeg",
+                "collectionName": "categories"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5690",
+                "elementName": "checkprevcheckout",
+                "elementType": "string",
+                "elementLabel": "checkprevcheckout",
+                "elementID": "bpxd",
+                "collectionID": "Cazeg",
+                "collectionName": "categories"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc568f",
+                "elementName": "BlockExpiredPatronOpacActions",
+                "elementType": "string",
+                "elementLabel": "BlockExpiredPatronOpacActions",
+                "elementID": "bquz",
+                "collectionID": "Cazeg",
+                "collectionName": "categories"
+              }
+            ],
+            "_id": "5ddeabc93c675b02cabc568e",
+            "collectionName": "categories",
+            "collectionLabel": "categories",
+            "collectionID": "Cazeg",
+            "left": 1105,
+            "top": 718,
+            "folded": true,
+            "component": 1
+          },
+          {
+            "elements": [
+              {
+                "_id": "5ddeabc93c675b02cabc568d",
+                "elementName": "itemtype",
+                "elementType": "string",
+                "elementLabel": "itemtype",
+                "elementID": "btmu",
+                "collectionID": "Cbsmh",
+                "collectionName": "itemtypes"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc568c",
+                "elementName": "description",
+                "elementType": "string",
+                "elementLabel": "Libellé type de document",
+                "elementID": "buku",
+                "collectionID": "Cbsmh",
+                "collectionName": "itemtypes",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc568b",
+                "elementName": "rentalcharge",
+                "elementType": "number",
+                "elementLabel": "rentalcharge",
+                "elementID": "bvib",
+                "collectionID": "Cbsmh",
+                "collectionName": "itemtypes"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc568a",
+                "elementName": "defaultreplacecost",
+                "elementType": "number",
+                "elementLabel": "defaultreplacecost",
+                "elementID": "bwjx",
+                "collectionID": "Cbsmh",
+                "collectionName": "itemtypes"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5689",
+                "elementName": "processfee",
+                "elementType": "number",
+                "elementLabel": "processfee",
+                "elementID": "bxte",
+                "collectionID": "Cbsmh",
+                "collectionName": "itemtypes"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5688",
+                "elementName": "notforloan",
+                "elementType": "number",
+                "elementLabel": "notforloan",
+                "elementID": "bynb",
+                "collectionID": "Cbsmh",
+                "collectionName": "itemtypes"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5687",
+                "elementName": "imageurl",
+                "elementType": "string",
+                "elementLabel": "imageurl",
+                "elementID": "bzdg",
+                "collectionID": "Cbsmh",
+                "collectionName": "itemtypes"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5686",
+                "elementName": "summary",
+                "elementType": "string",
+                "elementLabel": "summary",
+                "elementID": "cafp",
+                "collectionID": "Cbsmh",
+                "collectionName": "itemtypes"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5685",
+                "elementName": "checkinmsg",
+                "elementType": "string",
+                "elementLabel": "checkinmsg",
+                "elementID": "cbuv",
+                "collectionID": "Cbsmh",
+                "collectionName": "itemtypes"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5684",
+                "elementName": "checkinmsgtype",
+                "elementType": "string",
+                "elementLabel": "checkinmsgtype",
+                "elementID": "cczu",
+                "collectionID": "Cbsmh",
+                "collectionName": "itemtypes"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5683",
+                "elementName": "sip_media_type",
+                "elementType": "string",
+                "elementLabel": "sip_media_type",
+                "elementID": "cdjz",
+                "collectionID": "Cbsmh",
+                "collectionName": "itemtypes"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5682",
+                "elementName": "hideinopac",
+                "elementType": "string",
+                "elementLabel": "hideinopac",
+                "elementID": "ceob",
+                "collectionID": "Cbsmh",
+                "collectionName": "itemtypes"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5681",
+                "elementName": "searchcategory",
+                "elementType": "string",
+                "elementLabel": "searchcategory",
+                "elementID": "cfdd",
+                "collectionID": "Cbsmh",
+                "collectionName": "itemtypes"
+              }
+            ],
+            "_id": "5ddeabc93c675b02cabc5680",
+            "collectionName": "itemtypes",
+            "collectionLabel": "itemtypes",
+            "collectionID": "Cbsmh",
+            "left": 172,
+            "top": 483,
+            "folded": true,
+            "component": 1
+          },
+          {
+            "elements": [
+              {
+                "_id": "5ddeabc93c675b02cabc567f",
+                "elementName": "itemnumber",
+                "elementType": "string",
+                "elementLabel": "itemnumber",
+                "elementID": "acnf",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc567e",
+                "elementName": "biblionumber",
+                "elementType": "string",
+                "elementLabel": "biblionumber",
+                "elementID": "admq",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc567d",
+                "elementName": "biblioitemnumber",
+                "elementType": "string",
+                "elementLabel": "biblioitemnumber",
+                "elementID": "aeok",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc567c",
+                "elementName": "barcode",
+                "elementType": "string",
+                "elementLabel": "barcode",
+                "elementID": "aflm",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc567b",
+                "elementName": "dateaccessioned",
+                "elementType": "date",
+                "elementLabel": "dateaccessioned",
+                "elementID": "agla",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc567a",
+                "elementName": "booksellerid",
+                "elementType": "string",
+                "elementLabel": "booksellerid",
+                "elementID": "ahrg",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5679",
+                "elementName": "homebranch",
+                "elementType": "string",
+                "elementLabel": "Code bib propriétaire",
+                "elementID": "aijt",
+                "collectionID": "Cabrr",
+                "collectionName": "items",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5678",
+                "elementName": "price",
+                "elementType": "number",
+                "elementLabel": "price",
+                "elementID": "ajsz",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5677",
+                "elementName": "replacementprice",
+                "elementType": "number",
+                "elementLabel": "replacementprice",
+                "elementID": "akco",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5676",
+                "elementName": "replacementpricedate",
+                "elementType": "date",
+                "elementLabel": "replacementpricedate",
+                "elementID": "aljn",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5675",
+                "elementName": "datelastborrowed",
+                "elementType": "date",
+                "elementLabel": "datelastborrowed",
+                "elementID": "amcg",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5674",
+                "elementName": "datelastseen",
+                "elementType": "date",
+                "elementLabel": "datelastseen",
+                "elementID": "anjg",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5673",
+                "elementName": "stack",
+                "elementType": "string",
+                "elementLabel": "stack",
+                "elementID": "aoae",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5672",
+                "elementName": "notforloan",
+                "elementType": "string",
+                "elementLabel": "notforloan",
+                "elementID": "aprj",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5671",
+                "elementName": "itemlost",
+                "elementType": "string",
+                "elementLabel": "itemlost",
+                "elementID": "aqtn",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5670",
+                "elementName": "itemlost_on",
+                "elementType": "string",
+                "elementLabel": "itemlost_on",
+                "elementID": "arrf",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc566f",
+                "elementName": "withdrawn",
+                "elementType": "string",
+                "elementLabel": "withdrawn",
+                "elementID": "aszc",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc566e",
+                "elementName": "withdrawn_on",
+                "elementType": "string",
+                "elementLabel": "withdrawn_on",
+                "elementID": "atge",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc566d",
+                "elementName": "itemcallnumber",
+                "elementType": "string",
+                "elementLabel": "Cote",
+                "elementID": "aukb",
+                "collectionID": "Cabrr",
+                "collectionName": "items",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc566c",
+                "elementName": "coded_location_qualifier",
+                "elementType": "string",
+                "elementLabel": "coded_location_qualifier",
+                "elementID": "avvv",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc566b",
+                "elementName": "issues",
+                "elementType": "number",
+                "elementLabel": "issues",
+                "elementID": "awfo",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc566a",
+                "elementName": "renewals",
+                "elementType": "number",
+                "elementLabel": "renewals",
+                "elementID": "axmc",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5669",
+                "elementName": "reserves",
+                "elementType": "number",
+                "elementLabel": "reserves",
+                "elementID": "aykl",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5668",
+                "elementName": "restricted",
+                "elementType": "string",
+                "elementLabel": "restricted",
+                "elementID": "azbe",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5667",
+                "elementName": "itemnotes",
+                "elementType": "string",
+                "elementLabel": "itemnotes",
+                "elementID": "basb",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5666",
+                "elementName": "itemnotes_nonpublic",
+                "elementType": "string",
+                "elementLabel": "itemnotes_nonpublic",
+                "elementID": "bbcx",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5665",
+                "elementName": "holdingbranch",
+                "elementType": "string",
+                "elementLabel": "holdingbranch",
+                "elementID": "bcth",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5664",
+                "elementName": "paidfor",
+                "elementType": "string",
+                "elementLabel": "paidfor",
+                "elementID": "bdlh",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5663",
+                "elementName": "timestamp",
+                "elementType": "date",
+                "elementLabel": "timestamp",
+                "elementID": "beiw",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5662",
+                "elementName": "location",
+                "elementType": "string",
+                "elementLabel": "Localisation",
+                "elementID": "bfev",
+                "collectionID": "Cabrr",
+                "collectionName": "items",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5661",
+                "elementName": "permanent_location",
+                "elementType": "string",
+                "elementLabel": "permanent_location",
+                "elementID": "bgrq",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5660",
+                "elementName": "onloan",
+                "elementType": "date",
+                "elementLabel": "onloan",
+                "elementID": "bhqp",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc565f",
+                "elementName": "cn_source",
+                "elementType": "string",
+                "elementLabel": "cn_source",
+                "elementID": "biiq",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc565e",
+                "elementName": "cn_sort",
+                "elementType": "string",
+                "elementLabel": "cn_sort",
+                "elementID": "bjen",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc565d",
+                "elementName": "ccode",
+                "elementType": "string",
+                "elementLabel": "ccode",
+                "elementID": "bkkr",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc565c",
+                "elementName": "materials",
+                "elementType": "string",
+                "elementLabel": "materials",
+                "elementID": "blha",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc565b",
+                "elementName": "uri",
+                "elementType": "string",
+                "elementLabel": "uri",
+                "elementID": "bmqz",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc565a",
+                "elementName": "damaged",
+                "elementType": "string",
+                "elementLabel": "damaged",
+                "elementID": "bnji",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5659",
+                "elementName": "itype",
+                "elementType": "string",
+                "elementLabel": "itype",
+                "elementID": "borf",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5658",
+                "elementName": "more_subfields_xml",
+                "elementType": "string",
+                "elementLabel": "more_subfields_xml",
+                "elementID": "bpad",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5657",
+                "elementName": "enumchron",
+                "elementType": "string",
+                "elementLabel": "enumchron",
+                "elementID": "bqkq",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5656",
+                "elementName": "copynumber",
+                "elementType": "string",
+                "elementLabel": "copynumber",
+                "elementID": "brzi",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5655",
+                "elementName": "stocknumber",
+                "elementType": "string",
+                "elementLabel": "stocknumber",
+                "elementID": "bsxj",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5654",
+                "elementName": "new_status",
+                "elementType": "string",
+                "elementLabel": "new_status",
+                "elementID": "btuj",
+                "collectionID": "Cabrr",
+                "collectionName": "items"
+              }
+            ],
+            "_id": "5ddeabc93c675b02cabc5653",
+            "collectionName": "items",
+            "collectionLabel": "items",
+            "collectionID": "Cabrr",
+            "left": 345,
+            "top": 201,
+            "component": 1
+          },
+          {
+            "elements": [
+              {
+                "_id": "5ddeabc93c675b02cabc5652",
+                "collectionName": "bsort1",
+                "collectionID": "Cabjt",
+                "elementID": "acnt",
+                "elementLabel": "authorised_value",
+                "elementType": "string",
+                "elementName": "authorised_value"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5651",
+                "component": 1,
+                "elementRole": "dimension",
+                "collectionName": "bsort1",
+                "collectionID": "Cabjt",
+                "elementID": "adnu",
+                "elementLabel": "Libellé code stat 1",
+                "elementType": "string",
+                "elementName": "lib"
+              }
+            ],
+            "_id": "5ddeabc93c675b02cabc5650",
+            "component": 1,
+            "top": 1097,
+            "left": 1135,
+            "collectionID": "Cabjt",
+            "sqlQuery": "SELECT authorised_value,lib FROM authorised_values WHERE category='Bsort1'",
+            "isSQL": true,
+            "collectionLabel": "bsort1",
+            "collectionName": "bsort1"
+          },
+          {
+            "elements": [
+              {
+                "_id": "5ddeabc93c675b02cabc564f",
+                "collectionName": "bsort2",
+                "collectionID": "Caftu",
+                "elementID": "agjc",
+                "elementLabel": "authorised_value",
+                "elementType": "string",
+                "elementName": "authorised_value"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc564e",
+                "component": 1,
+                "elementRole": "dimension",
+                "collectionName": "bsort2",
+                "collectionID": "Caftu",
+                "elementID": "ahvu",
+                "elementLabel": "Libellé code stat 2",
+                "elementType": "string",
+                "elementName": "lib"
+              }
+            ],
+            "_id": "5ddeabc93c675b02cabc564d",
+            "component": 1,
+            "top": 1187,
+            "left": 1156,
+            "collectionID": "Caftu",
+            "sqlQuery": "SELECT authorised_value,lib FROM authorised_values WHERE category='Bsort2'",
+            "isSQL": true,
+            "collectionLabel": "bsort2",
+            "collectionName": "bsort2"
+          },
+          {
+            "elements": [
+              {
+                "_id": "5ddeabc93c675b02cabc564c",
+                "elementName": "branchcode",
+                "elementType": "string",
+                "elementLabel": "branchcode",
+                "elementID": "aczx",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc564b",
+                "elementName": "branchname",
+                "elementType": "string",
+                "elementLabel": "Libellé bib document",
+                "elementID": "adhq",
+                "collectionID": "Cabej",
+                "collectionName": "branches",
+                "elementRole": "dimension",
+                "component": 1
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc564a",
+                "elementName": "branchaddress1",
+                "elementType": "string",
+                "elementLabel": "branchaddress1",
+                "elementID": "aefj",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5649",
+                "elementName": "branchaddress2",
+                "elementType": "string",
+                "elementLabel": "branchaddress2",
+                "elementID": "afzv",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5648",
+                "elementName": "branchaddress3",
+                "elementType": "string",
+                "elementLabel": "branchaddress3",
+                "elementID": "agsy",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5647",
+                "elementName": "branchzip",
+                "elementType": "string",
+                "elementLabel": "branchzip",
+                "elementID": "ahvb",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5646",
+                "elementName": "branchcity",
+                "elementType": "string",
+                "elementLabel": "branchcity",
+                "elementID": "aipr",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5645",
+                "elementName": "branchstate",
+                "elementType": "string",
+                "elementLabel": "branchstate",
+                "elementID": "ajxp",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5644",
+                "elementName": "branchcountry",
+                "elementType": "string",
+                "elementLabel": "branchcountry",
+                "elementID": "akvw",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5643",
+                "elementName": "branchphone",
+                "elementType": "string",
+                "elementLabel": "branchphone",
+                "elementID": "alsp",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5642",
+                "elementName": "branchfax",
+                "elementType": "string",
+                "elementLabel": "branchfax",
+                "elementID": "amff",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5641",
+                "elementName": "branchemail",
+                "elementType": "string",
+                "elementLabel": "branchemail",
+                "elementID": "anrl",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5640",
+                "elementName": "branchreplyto",
+                "elementType": "string",
+                "elementLabel": "branchreplyto",
+                "elementID": "aokg",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc563f",
+                "elementName": "branchreturnpath",
+                "elementType": "string",
+                "elementLabel": "branchreturnpath",
+                "elementID": "apvu",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc563e",
+                "elementName": "branchurl",
+                "elementType": "string",
+                "elementLabel": "branchurl",
+                "elementID": "aqhj",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc563d",
+                "elementName": "issuing",
+                "elementType": "string",
+                "elementLabel": "issuing",
+                "elementID": "ario",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc563c",
+                "elementName": "branchip",
+                "elementType": "string",
+                "elementLabel": "branchip",
+                "elementID": "astw",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc563b",
+                "elementName": "branchprinter",
+                "elementType": "string",
+                "elementLabel": "branchprinter",
+                "elementID": "atez",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc563a",
+                "elementName": "branchnotes",
+                "elementType": "string",
+                "elementLabel": "branchnotes",
+                "elementID": "aubc",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5639",
+                "elementName": "opac_info",
+                "elementType": "string",
+                "elementLabel": "opac_info",
+                "elementID": "avbe",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5638",
+                "elementName": "geolocation",
+                "elementType": "string",
+                "elementLabel": "geolocation",
+                "elementID": "awhn",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5637",
+                "elementName": "marcorgcode",
+                "elementType": "string",
+                "elementLabel": "marcorgcode",
+                "elementID": "axbt",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              },
+              {
+                "_id": "5ddeabc93c675b02cabc5636",
+                "elementName": "pickup_location",
+                "elementType": "string",
+                "elementLabel": "pickup_location",
+                "elementID": "aytz",
+                "collectionID": "Cabej",
+                "collectionName": "branches"
+              }
+            ],
+            "_id": "5ddeabc93c675b02cabc5635",
+            "collectionName": "branches",
+            "collectionLabel": "branches",
+            "collectionID": "Cabej",
+            "folded": true,
+            "component": 1
+          }
+        ]
+      },
+      "_id": "5c4ed6224e5621012fdb5010",
+      "status": "active",
+      "name": "Réservations historique",
+      "__v": 1,
+      "objects": [
+        {
+          "_id": "5ddeabc93c675b02cabc5634",
+          "collectionName": "old_reserves",
+          "collectionID": "Cabmg",
+          "elementID": "acmr",
+          "elementLabel": "Identifiant réservation",
+          "elementType": "string",
+          "elementName": "reserve_id",
+          "defaultAggregation": "count",
+          "elementRole": "dimension",
+          "component": 1
+        },
+        {
+          "_id": "5ddeabc93c675b02cabc5633",
+          "collectionName": "old_reserves",
+          "collectionID": "Cabmg",
+          "elementID": "amns",
+          "elementLabel": "Statut",
+          "elementType": "string",
+          "elementName": "found",
+          "elementRole": "dimension",
+          "component": 1
+        },
+        {
+          "_id": "5ddeabc93c675b02cabc5632",
+          "collectionName": "old_reserves",
+          "collectionID": "Cabmg",
+          "elementID": "adnj",
+          "elementLabel": "Code adhérent réservant",
+          "elementType": "string",
+          "elementName": "borrowernumber",
+          "elementRole": "dimension",
+          "component": 1,
+          "defaultAggregation": "count"
+        },
+        {
+          "_id": "5ddeabc93c675b02cabc5631",
+          "collectionName": "old_reserves",
+          "collectionID": "Cabmg",
+          "elementID": "akwu",
+          "elementLabel": "Note",
+          "elementType": "string",
+          "elementName": "reservenotes",
+          "elementRole": "dimension",
+          "component": 1
+        },
+        {
+          "_id": "5ddeabc93c675b02cabc5630",
+          "component": 1,
+          "elementRole": "dimension",
+          "collectionName": "old_reserves",
+          "collectionID": "Cabmg",
+          "elementID": "agva",
+          "elementLabel": "Code bibliothèque de réservation",
+          "elementType": "string",
+          "elementName": "branchcode"
+        },
+        {
+          "_id": "5ddeabc93c675b02cabc562f",
+          "collectionName": "branches",
+          "collectionID": "Cejfu",
+          "elementID": "elwg",
+          "elementLabel": "Libellé bibliothèque de réservation",
+          "elementType": "string",
+          "elementName": "branchname",
+          "elementRole": "dimension",
+          "component": 1
+        },
+        {
+          "_id": "5ddeabc93c675b02cabc5629",
+          "elementLabel": "Document",
+          "elementRole": "folder",
+          "elementID": "Fbvri",
+          "elements": [
+            {
+              "_id": "5ddeabc93c675b02cabc562e",
+              "elementName": "branchname",
+              "elementType": "string",
+              "elementLabel": "Libellé bib document",
+              "elementID": "adhq",
+              "collectionID": "Cabej",
+              "collectionName": "branches",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc562d",
+              "elementName": "location",
+              "elementType": "string",
+              "elementLabel": "Localisation",
+              "elementID": "bfev",
+              "collectionID": "Cabrr",
+              "collectionName": "items",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc562c",
+              "elementName": "itemcallnumber",
+              "elementType": "string",
+              "elementLabel": "Cote",
+              "elementID": "aukb",
+              "collectionID": "Cabrr",
+              "collectionName": "items",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc562b",
+              "elementName": "description",
+              "elementType": "string",
+              "elementLabel": "Libellé type de document",
+              "elementID": "buku",
+              "collectionID": "Cbsmh",
+              "collectionName": "itemtypes",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc562a",
+              "isCustom": true,
+              "elementID": "bwgr",
+              "viewExpression": "#agva<>#aijt",
+              "elementName": "comp",
+              "component": 1,
+              "expression": "agva<>aijt",
+              "elementLabel": "Doc venant d'ailleurs",
+              "elementType": "number",
+              "elementRole": "dimension"
+            }
+          ]
+        },
+        {
+          "_id": "5ddeabc93c675b02cabc561c",
+          "elementLabel": "Adhérent",
+          "elementRole": "folder",
+          "elementID": "Facdi",
+          "elements": [
+            {
+              "_id": "5ddeabc93c675b02cabc5628",
+              "collectionName": "borrowers",
+              "collectionID": "Cavji",
+              "elementID": "aypq",
+              "elementLabel": "Nom adhérent",
+              "elementType": "string",
+              "elementName": "surname",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc5627",
+              "collectionName": "borrowers",
+              "collectionID": "Cavji",
+              "elementID": "azpz",
+              "elementLabel": "Prénom adhérent",
+              "elementType": "string",
+              "elementName": "firstname",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc5626",
+              "collectionName": "borrowers",
+              "collectionID": "Cavji",
+              "elementID": "bjry",
+              "elementLabel": "code postal",
+              "elementType": "string",
+              "elementName": "zipcode",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc5625",
+              "collectionName": "borrowers",
+              "collectionID": "Cavji",
+              "elementID": "bhfe",
+              "elementLabel": "Ville",
+              "elementType": "string",
+              "elementName": "city",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc5624",
+              "collectionName": "borrowers",
+              "collectionID": "Cavji",
+              "elementID": "bkjr",
+              "elementLabel": "Pays",
+              "elementType": "string",
+              "elementName": "country",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc5623",
+              "collectionName": "borrowers",
+              "collectionID": "Cavji",
+              "elementID": "cduj",
+              "elementLabel": "Catégorie adhérent",
+              "elementType": "string",
+              "elementName": "categorycode",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc5622",
+              "elementName": "description",
+              "elementType": "string",
+              "elementLabel": "Libellé catégorie adhérent",
+              "elementID": "bboa",
+              "collectionID": "Cazeg",
+              "collectionName": "categories",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc5621",
+              "collectionName": "borrowers",
+              "collectionID": "Cavji",
+              "elementID": "ccyq",
+              "elementLabel": "Code bibliothèque adhérent",
+              "elementType": "string",
+              "elementName": "branchcode",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc5620",
+              "collectionName": "borrowers",
+              "collectionID": "Cavji",
+              "elementID": "czsd",
+              "elementLabel": "code Statistique 1",
+              "elementType": "string",
+              "elementName": "sort1",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc561f",
+              "component": 1,
+              "elementRole": "dimension",
+              "collectionName": "bsort1",
+              "collectionID": "Cabjt",
+              "elementID": "adnu",
+              "elementLabel": "Libellé code stat 1",
+              "elementType": "string",
+              "elementName": "lib"
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc561e",
+              "collectionName": "borrowers",
+              "collectionID": "Cavji",
+              "elementID": "daib",
+              "elementLabel": "Code statistique 2",
+              "elementType": "string",
+              "elementName": "sort2",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc561d",
+              "component": 1,
+              "elementRole": "dimension",
+              "collectionName": "bsort2",
+              "collectionID": "Caftu",
+              "elementID": "ahvu",
+              "elementLabel": "Libellé code stat 2",
+              "elementType": "string",
+              "elementName": "lib"
+            }
+          ]
+        },
+        {
+          "_id": "5ddeabc93c675b02cabc5613",
+          "elementLabel": "Dates",
+          "elementRole": "folder",
+          "elementID": "Fadpt",
+          "elements": [
+            {
+              "_id": "5ddeabc93c675b02cabc561b",
+              "collectionName": "old_reserves",
+              "collectionID": "Cabmg",
+              "elementID": "aerp",
+              "elementLabel": "Date réservation",
+              "elementType": "date",
+              "elementName": "reservedate",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc561a",
+              "elementRole": "dimension",
+              "elementLabel": "Année réservation",
+              "expression": "YEAR(aerp)",
+              "component": 1,
+              "elementName": "comp",
+              "viewExpression": "YEAR(#aerp)",
+              "elementID": "abuv",
+              "isCustom": true
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc5619",
+              "elementRole": "dimension",
+              "expression": "MONTH(aerp)",
+              "elementLabel": "Mois réservation",
+              "component": 1,
+              "elementName": "comp",
+              "viewExpression": "MONTH(#aerp)",
+              "elementID": "acmz",
+              "isCustom": true
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc5618",
+              "elementRole": "dimension",
+              "expression": "CONCAT(YEAR(aerp),'-',MONTH(aerp))",
+              "elementType": "string",
+              "elementLabel": "Année-mois réservation",
+              "component": 1,
+              "elementName": "comp",
+              "viewExpression": "CONCAT(YEAR(#aerp),'-',MONTH(#aerp))",
+              "elementID": "adjv",
+              "isCustom": true
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc5617",
+              "elementRole": "dimension",
+              "expression": "DAYOFWEEK(aerp)",
+              "component": 1,
+              "description": "1= dimanche\n7= samedi",
+              "elementLabel": "Jour de la réservation",
+              "elementName": "comp",
+              "viewExpression": "DAYOFWEEK(#aerp)",
+              "elementID": "aene",
+              "isCustom": true
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc5616",
+              "collectionName": "old_reserves",
+              "collectionID": "Cabmg",
+              "elementID": "ajei",
+              "elementLabel": "Date d'annulation",
+              "elementType": "date",
+              "elementName": "cancellationdate",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc5615",
+              "collectionName": "old_reserves",
+              "collectionID": "Cabmg",
+              "elementID": "aqnx",
+              "elementLabel": "Date d'expiration",
+              "elementType": "date",
+              "elementName": "expirationdate",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5ddeabc93c675b02cabc5614",
+              "collectionName": "old_reserves",
+              "collectionID": "Cabmg",
+              "elementID": "apfq",
+              "elementLabel": "Date mise à disposition",
+              "elementType": "date",
+              "elementName": "waitingdate",
+              "elementRole": "dimension",
+              "component": 1
+            },
+            {
+              "_id": "5fce025651cd1a03715c9971",
+              "isCustom": true,
+              "elementID": "abdi",
+              "viewExpression": "YEAR(#apfq)",
+              "elementName": "comp",
+              "component": 1,
+              "elementLabel": "Année mise à disposition",
+              "elementType": "number",
+              "elementRole": "dimension"
+            }
+          ]
+        }
+      ],
+      "datasourceID": "5c98a2ea2bae1b3c6865a6cb"
+    }
+  ],
+  "datasources": [
+    {
+      "connection": {
+        "database": "koha",
+        "port": "3306",
+        "host": "localhost",
+        "password": "6MhP4s5mOc",
+        "userName": "kohaadmin"
+      },
+      "companyID": "COMPID",
+      "status": 1,
+      "_id": "5c98a2ea2bae1b3c6865a6cb",
+      "packetSize": 500,
+      "type": "MySQL",
+      "name": "koha",
+      "nd_trash_deleted": false,
+      "__v": 0,
+      "createdOn": "2020-12-07T10:34:32.376Z"
+    }
+  ]
+}
